@@ -7,7 +7,7 @@ input = open(argv[2], encoding = "utf-8")
 dictionary = {}
 for line in input:
   split = findall(r"[^\t\n]+", line)
-  dictionary[split[0]] = set()
+  dictionary[split[0].lower()] = set()
 
 print("Sorting sentences...")
 input = open(argv[3], encoding = "utf-8")
