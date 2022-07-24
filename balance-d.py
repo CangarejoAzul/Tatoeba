@@ -9,7 +9,7 @@ for line in input:
   split = findall("[^\t\n]+", line)
   if len(split[0]) not in dictionary:
     dictionary[len(split[0])] = {}
-  dictionary[len(split[0])][split[0]] = set()
+  dictionary[len(split[0])][split[0].lower()] = set()
 
 print("Sorting sentences...")
 input = open(argv[3], encoding = "utf-8")
