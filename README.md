@@ -1,6 +1,6 @@
 # Tatoeba Tools
 
-These scripts use the sentences.csv and links.csv files, which can be downloaded from [Tatoeba](https://tatoeba.org/en/downloads). The sentences_detailed.csv file can be used instead of the sentences.csv file. Unused lines in these files can be deleted to improve performance.
+These scripts use the sentences.csv and links.csv files, which can be downloaded from [this Tatoeba page](https://tatoeba.org/en/downloads). The sentences_detailed.csv file can be used instead of the sentences.csv file. Unused lines in these files can be deleted to improve performance.
 
 ## Balance
 
@@ -28,3 +28,7 @@ python balance-d.py eng dictionary.csv sentences.csv balanced.csv
 ```
 python untranslated.py deu eng links.csv sentences.csv intermediate.csv output.csv
 ```
+
+## Future
+
+Writing a script that filters all sentences written by a native speaker should be simple.
